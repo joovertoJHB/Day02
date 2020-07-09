@@ -6,16 +6,15 @@
 /*   By: jooverto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 08:55:19 by jooverto          #+#    #+#             */
-/*   Updated: 2020/07/09 10:23:57 by jooverto         ###   ########.fr       */
+/*   Updated: 2020/07/09 12:48:53 by jooverto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int			ft_putchar(char c)
+void			ft_putchar(char c)
 {
 	write(1, &c, 1);
-	return (0);
 }
 
 void		 ft_print_alphabet(void)
@@ -30,9 +29,4 @@ void		 ft_print_alphabet(void)
 		
 }
 
-int		main()
-{
-	ft_print_alphabet();
-	ft_putchar('\n');
-	return(0);
-}
+

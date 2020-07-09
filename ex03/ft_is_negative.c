@@ -1,40 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jooverto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/09 10:35:04 by jooverto          #+#    #+#             */
-/*   Updated: 2020/07/09 10:50:55 by jooverto         ###   ########.fr       */
+/*   Created: 2020/07/09 11:46:51 by jooverto          #+#    #+#             */
+/*   Updated: 2020/07/09 12:44:50 by jooverto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
 
-
-int 		ft_putchar(char c)
+void 		ft_putchar(char c)
 {
-	write(1, &c, 1);
-	return(0);
+		write(1, &c, 1);
+}
+void 		ft_is_negative(int n)
+{
+		if (n <= 0 || n== '\0')
+			{
+				ft_putchar ('N');
+			}
+
+		else if (n >= 0)
+			{
+				ft_putchar ('P');
+			}
+		ft_putchar('\n');
 }
 
-void 		ft_print_reverse_alphabet(void)
-{
 
-	char alpha;
-	
-	alpha = 'z';
-	while(alpha >= 'a')
-			{	ft_putchar(alpha);
-				alpha--;	
-			}	
-
-}
-
-int 	main()
-{
-	ft_print_reverse_alphabet();
-	ft_putchar('\n');
-	return(0);
-}
