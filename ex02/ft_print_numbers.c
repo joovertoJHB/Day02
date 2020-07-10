@@ -6,20 +6,17 @@
 /*   By: jooverto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 11:09:23 by jooverto          #+#    #+#             */
-/*   Updated: 2020/07/09 12:59:16 by jooverto         ###   ########.fr       */
+/*   Updated: 2020/07/10 10:09:11 by jooverto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void 		ft_putchar(char c)
+void	ft_putchar(char c)
 {
 		write(1, &c, 1);
 }
 
-void		ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
-		char alpha;
+		char	alpha;
 
 		alpha = '1';
 		while(alpha <= '9')
