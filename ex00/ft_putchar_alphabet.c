@@ -6,18 +6,15 @@
 /*   By: jooverto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 08:55:19 by jooverto          #+#    #+#             */
-/*   Updated: 2020/07/09 12:48:53 by jooverto         ###   ########.fr       */
+/*   Updated: 2020/07/10 10:03:39 by jooverto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void			ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void		 ft_print_alphabet(void)
+void	 ft_print_alphabet(void)
 {		
 		char i;
 		
@@ -26,7 +23,5 @@ void		 ft_print_alphabet(void)
 			{	ft_putchar(i);
 				i++;
 			}
-		
 }
-
-
+	
